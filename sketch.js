@@ -1,8 +1,8 @@
 //commenmt
 
 let capture;
-let BotID = 'bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc'
-let urlPhoto = 'https://api.telegram.org/bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc/sendPhoto'
+let BotID = 'bot123456'
+let urlPhoto = 'https://api.telegram.org/bot123456789/sendPhoto'
 
 function setup() {
   // createCanvas(480, 480);
@@ -180,7 +180,7 @@ function handleFile(file) {
     }
   });
   
-  xhr.open("POST", "https://api.telegram.org/bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc/sendPhoto");
+  xhr.open("POST", "https://api.telegram.org/bot/sendPhoto");
   xhr.setRequestHeader("Content-Type", " multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
   
   xhr.send(data);
@@ -201,7 +201,7 @@ function doHTTPGet() {
   // httpGet(path, data, [callback], [errorCallback])
   // httpGet(path, callback, [errorCallback])
   //pre-installed function
-  let url = 'https://api.telegram.org/bot941539918:AAEA-WBRpCLWYgPKokrjsdJqjoykIe2CElc/sendMessage?chat_id=@testtp&text=HelloFromBotandFromP5';
+  let url = 'https://api.telegram.org/bot/sendMessage?chat_id=@testtp&text=HelloFromBotandFromP5';
   httpGet(url, function(response) {
     // when the HTTP request completes, populate the variable that holds the
     // earthquake data used in the visualization.
